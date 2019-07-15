@@ -1,0 +1,31 @@
+.el-autocomplete {
+  width: 100%;
+
+  .el-input-group__append {
+    .el-button {
+      padding: 5px;
+    }
+  }
+}
+
+.el-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+
+  .el-form-item {
+    margin: 0px;
+
+    .el-form-item__content {
+      button {
+        width: 100%;
+      }
+
+      .el-select {
+        width: 100%;
+      }
+    }
+  }
+}
