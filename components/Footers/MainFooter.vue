@@ -1,5 +1,5 @@
 <template>
-  <div class="main-footer">
+  <div class="main-footer mt-3">
     <div class="container">
       <div class="row">
         <p>THƯỜNG ĐƯỢC TÌM KIẾM</p>

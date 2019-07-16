@@ -1,16 +1,18 @@
 <template>
   <div class="top-banner">
     <a :href="img1">
-      <img
+      <b-img
         :src="img1"
         alt="top banner"
-      >
+        fluid
+      ></b-img>
     </a>
     <a :href="img2">
-      <img
+      <b-img
         :src="img2"
         alt="top banner"
-      >
+        fluid
+      ></b-img>
     </a>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bottom-footer">
+  <div class="bottom-footer mt-3">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-sm-6 col-6 bfoo-left">
@@ -51,8 +51,6 @@ export default {
   background-color: #ececec;
   padding: 10px 0px;
   border-top: 1px solid #d4c1c1;
-  .bfoo-left {
-  }
   .bfoo-center {
     p {
       font-size: 90%;

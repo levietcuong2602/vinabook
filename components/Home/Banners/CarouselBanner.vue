@@ -4,11 +4,11 @@
       v-for="img in imgs"
       :key="img.img"
     >
-      <img
+      <b-img
         :src="img.img"
         alt="image-1"
-        style="width: 100%; height: 100%;"
-      >
+        fluid
+      ></b-img>
     </el-carousel-item>
   </el-carousel>
 </template>
