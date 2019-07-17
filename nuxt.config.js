@@ -47,7 +47,7 @@ export default {
   plugins: [
     '~/plugins/element-ui.js',
     '~/plugins/bootstrap-vue.js',
-    // '~/plugins/fontawesome.js',
+    '~/plugins/vue-awesome-countdown.js',
   ],
   /*
    ** Nuxt.js modules

@@ -38,3 +38,8 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.content-main {
+  background-color: #f3f3f3;
+}
+</style>

@@ -1,0 +1,106 @@
+.product-item {
+  text-decoration: none;
+
+  :hover {
+    text-decoration: none;
+  }
+
+  .product-wrap {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    padding: 10px;
+
+    .book-info {
+      display: flex;
+      justify-content: space-between;
+
+      .pict-book {
+        width: 38%;
+        max-height: 160px;
+        margin-top: -20px;
+        position: relative;
+
+        .img-product {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .icon-sale {
+          position: absolute;
+          top: 10px;
+          left: -15px;
+        }
+      }
+
+      .text-info {
+        width: 58%;
+
+        .product-title {
+          font-size: 90%;
+          color: #000;
+          font-weight: 500;
+          white-space: nowrap;
+          overflow: hidden !important;
+          text-overflow: ellipsis;
+          margin: 0px;
+        }
+
+        .product-author {
+          font-size: 78%;
+          color: #848282;
+          overflow: hidden;
+          display: block;
+        }
+
+        .product-content {
+          color: #3d3d3d;
+          line-height: 18px;
+          overflow: hidden;
+          font-family: "Montserrat-Light" !important;
+          white-space: normal;
+        }
+      }
+    }
+
+    .price-book {
+      display: flex;
+      border-top: 1px dashed #d2d2d2;
+      margin-top: 10px;
+      padding: 10px 10px 0 0;
+      justify-content: space-between;
+
+      .sale {
+        span {
+          width: 40px;
+          height: 20px;
+          background: #f03737;
+          text-align: center;
+          color: #ffffff;
+          border-radius: 4px;
+          padding: 5px;
+          font-family: "Montserrat-Light";
+          font-weight: bold;
+          font-size: 90%;
+        }
+      }
+
+      .price {
+        .old-price {
+          font-size: 90%;
+          color: #777777;
+          text-decoration: line-through;
+          padding: 5px;
+        }
+
+        .final-price {
+          font-size: 90%;
+          color: #777777;
+          padding: 5px;
+          color: #c02026;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.product-box {
+  .title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .box-title {
+      padding: 40px 0;
+      font-size: 120%;
+      font-weight: 500;
+      color: #000;
+    }
+
+    .box-more {
+      color: #0a6f3c;
+      font-size: 100%;
+      font-weight: 500;
+    }
+  }
+}
