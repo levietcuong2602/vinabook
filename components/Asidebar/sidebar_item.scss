@@ -1,0 +1,50 @@
+a {
+  text-decoration: none;
+  color: #66645c;
+}
+
+.sidebar-title {
+  .title {
+    font-size: 110%;
+    font-weight: 500;
+  }
+}
+
+.sidebar-pict {
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.title {
+  font-size: 90%;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.author {
+  margin: 0px;
+  color: #6b6b6b;
+  font-size: 85%;
+}
+
+.rate {
+  margin-bottom: 0px;
+}
+
+.price {
+  .old-price {
+    font-size: 85%;
+    color: #777777;
+    text-decoration: line-through;
+  }
+
+  .final-price {
+    font-size: 85%;
+    color: #f03737;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+}

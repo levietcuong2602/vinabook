@@ -1,20 +1,22 @@
 <template>
   <div class="main-app">
     <div class="container">
+      <!-- banner -->
       <div class="row mt-3">
-        <div class="col-md-3 col-sm-6 col-12 d-none d-md-block">
+        <div class="col-lg-3  d-none d-lg-block">
           <TopBanner />
         </div>
-        <div class="col-md-6 col-sm-12 col-12">
+        <div class="col-lg-6 col-md-12">
           <CarouselBanner />
         </div>
-        <div class="col-md-3 col-sm-6 col-12 d-none d-md-block">
+        <div class="col-lg-3 d-none d-lg-block">
           <TopBanner />
         </div>
       </div>
       <BottomBanner />
+      <!-- end banner -->
       <div class="row mt-3">
-        <div class="col-md-9 col-sm-6 col-12">
+        <div class="col-lg-9 col-md-8 col-sm-12 col-12">
           <FlashSale />
           <div class="row mt-3">
             <ProductItem
@@ -87,8 +89,19 @@
             />
           </ProductBox>
         </div>
-        <div class="col-md-3 col-sm-6 col-12">
-          this iss asidebar
+        <div class="col-lg-3 col-md-4 col-sm-12 col-12">
+          <AsidebarBox title="Sách Bán Chạy Trong Tuần">
+            <SidebarItem
+              v-for="i in 5"
+              :key="i"
+            />
+          </AsidebarBox>
+          <AsidebarBox title="Sách Bán Chạy Trong Tuần">
+            <SidebarItem
+              v-for="i in 5"
+              :key="i"
+            />
+          </AsidebarBox>
         </div>
       </div>
     </div>
@@ -102,6 +115,8 @@ import BottomBanner from '@/components/Home/Banners/BottomBanner';
 import FlashSale from '@/components/Home/CountDown/FlashSale';
 import ProductItem from '@/components/Products/ProductItem';
 import ProductBox from '@/components/Products/ProductBox';
+import AsidebarBox from '@/components/Asidebar/AsidebarBox';
+import SidebarItem from '@/components/Asidebar/SidebarItem';
 
 export default {
   components: {
@@ -111,6 +126,8 @@ export default {
     FlashSale,
     ProductItem,
     ProductBox,
+    SidebarItem,
+    AsidebarBox,
   }
 }
 </script>

@@ -31,3 +31,12 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.top-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+</style>
+

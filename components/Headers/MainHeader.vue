@@ -1,52 +1,54 @@
 <template>
-  <div class="main-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-3 col-lg-3 col-md-12">
-          <div class="top-logo">
-            <a href="/">
-              <img
-                src="/img/vnb_logo_2x.png"
-                alt="logo"
-              >
-            </a>
+  <nav data-spy="affix">
+    <div class="main-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-12">
+            <div class="top-logo">
+              <a href="/">
+                <img
+                  src="/img/vnb_logo_2x.png"
+                  alt="logo"
+                >
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 search-wrap">
-          <div class="top-search">
-            <el-autocomplete
-              popper-class="my-autocomplete"
-              v-model="state"
-              :fetch-suggestions="querySearch"
-              placeholder="Enter book name, author's book"
-              @select="handleSelect"
-            >
-              <i
-                class="el-icon-search el-input__icon"
-                slot="suffix"
-                @click="handleIconClick"
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 search-wrap">
+            <div class="top-search">
+              <el-autocomplete
+                popper-class="my-autocomplete"
+                v-model="state"
+                :fetch-suggestions="querySearch"
+                placeholder="Enter book name, author's book"
+                @select="handleSelect"
               >
-              </i>
-              <!-- <el-button slot="append">Tìm kiếm</el-button> -->
-              <template slot-scope="{ item }">
-                <div class="value">{{ item.value }}</div>
-                <span class="link">{{ item.link }}</span>
-              </template>
-            </el-autocomplete>
+                <i
+                  class="el-icon-search el-input__icon"
+                  slot="suffix"
+                  @click="handleIconClick"
+                >
+                </i>
+                <!-- <el-button slot="append">Tìm kiếm</el-button> -->
+                <template slot-scope="{ item }">
+                  <div class="value">{{ item.value }}</div>
+                  <span class="link">{{ item.link }}</span>
+                </template>
+              </el-autocomplete>
+            </div>
           </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 d-flex justify-content-between">
-          <HeartDropdown />
-          <CartDropdown />
-          <div class="top-online">
-            <a href="/login">Đăng nhập</a>
-            <el-divider direction="vertical"></el-divider>
-            <a href="/register">Đăng ký</a>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 d-flex justify-content-between">
+            <HeartDropdown />
+            <CartDropdown />
+            <div class="top-online">
+              <a href="/login">Đăng nhập</a>
+              <el-divider direction="vertical"></el-divider>
+              <a href="/register">Đăng ký</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </nav>
 </template>
 <script>
 import CartDropdown from './CartDropdown';

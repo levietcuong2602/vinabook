@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-4 col-sm-6 col-12 mt-3">
+  <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
     <a
       href="#"
       class="product-item"
