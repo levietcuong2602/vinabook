@@ -17,6 +17,7 @@
     "nuxt": "^2.0.0",
     "vue-awesome-countdown": "^1.0.16",
     "vue-facebook-signin-button": "^1.0.1",
+    "vue-google-signin-button": "^1.0.4",
     "vue2-flip-countdown": "^0.9.1"
   },
   "devDependencies": {

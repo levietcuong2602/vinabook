@@ -27,7 +27,10 @@ export default {
         rel: 'stylesheet',
         href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css'
       },
-    ]
+    ],
+    script: [{
+      src: 'https://apis.google.com/js/api:client.js'
+    }]
   },
   /*
    ** Customize the progress-bar color
@@ -48,6 +51,14 @@ export default {
     '~/plugins/element-ui.js',
     '~/plugins/bootstrap-vue.js',
     '~/plugins/vue-awesome-countdown.js',
+    {
+      src: '~plugins/fb-signin-button.js',
+      ssr: false,
+    },
+    {
+      src: '~plugins/gg-signin-button.js',
+      ssr: false,
+    },
   ],
   /*
    ** Nuxt.js modules

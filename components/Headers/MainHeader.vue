@@ -20,12 +20,10 @@
                 v-model="state"
                 :fetch-suggestions="querySearch"
                 placeholder="Enter book name, author's book"
-                @select="handleSelect"
               >
                 <i
                   class="el-icon-search el-input__icon"
                   slot="suffix"
-                  @click="handleIconClick"
                 >
                 </i>
                 <!-- <el-button slot="append">Tìm kiếm</el-button> -->
@@ -40,7 +38,7 @@
             <HeartDropdown />
             <CartDropdown />
             <div class="top-online">
-              <a href="/login">Đăng nhập</a>
+              <span @click="showDialogLogin">Đăng nhập</span>
               <el-divider direction="vertical"></el-divider>
               <a href="/register">Đăng ký</a>
             </div>
@@ -54,16 +52,21 @@
 import CartDropdown from './CartDropdown';
 import HeartDropdown from './HeartDropdown';
 
+import { mapGetters } from "vuex";
+
 export default {
   name: 'MainHeader',
   components: {
     CartDropdown,
     HeartDropdown
   },
+  computed: {
+    ...mapGetters(['getDialogLoginVisible']),
+  },
   data() {
     return {
       links: [],
-      state: ''
+      state: '',
     };
   },
   methods: {
@@ -89,11 +92,11 @@ export default {
         { "value": "babel", "link": "https://github.com/babel/babel" }
       ];
     },
-    handleSelect(item) {
-      console.log(item);
-    },
-    handleIconClick(ev) {
-      console.log(ev);
+    showDialogLogin() {
+      const isLogin = this.getDialogLoginVisible;
+      this.$store.dispatch('changeDialogLoginVisible', !isLogin);
+
+      console.log('login: ', this.getDialogLoginVisible);
     }
   },
   mounted() {
@@ -109,7 +112,8 @@ export default {
     display: flex;
     align-items: center;
 
-    a {
+    a, span {
+      cursor: pointer;
       font-size: 85%;
       color: #0f0f0f;
       text-decoration: none;

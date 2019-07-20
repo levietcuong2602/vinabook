@@ -107,7 +107,8 @@
           <div class="col-lg-4 col-sm-6 col-12">
             <h5 class="text-center mb-5">ĐĂNG NHẬP CÁCH KHÁC</h5>
             <div class="login-other">
-              <p>Login by google</p>
+              <GGLoginButton />
+              <FBLoginButton />
             </div>
           </div>
         </div>
@@ -116,7 +117,14 @@
   </div>
 </template>
 <script>
+import FBLoginButton from '@/components/Login/FBLoginButton';
+import GGLoginButton from '@/components/Login/GGLoginButton';
+
 export default {
+  components: {
+    FBLoginButton,
+    GGLoginButton
+  },
   data() {
     var validateFullname = (rule, value, callback) => {
       setTimeout(() => {
@@ -190,19 +198,28 @@ export default {
         confirm: [
           { validator: validateConfirm, trigger: 'blur' },
         ]
-      }
+      },
     };
   },
   methods: {
     resetForm(formName) {
       this.$refs[formName].resetFields();
-    }
-  }
+    },
+  },
 }
 </script>
 <style lang="scss" scoped>
 .register {
-  // background-color: #fff;
+  .form-register {
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+
+    .login-other {
+      text-align: center;
+    }
+  }
 }
 </style>
 

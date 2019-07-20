@@ -56,10 +56,12 @@ export default {
       #popover-4 {
         font-size: 85%;
         font-weight: 600;
+        cursor: pointer;
       }
       #popover-5 {
         font-size: 85%;
         font-weight: 600;
+        cursor: pointer;
         a {
           color: #fff;
           text-decoration: none;

@@ -79,6 +79,7 @@ export default {
 .top-header {
   background-color: #f3f3f3;
   span {
+    cursor: pointer;
     color: #66645c;
     font-size: 85%;
   }

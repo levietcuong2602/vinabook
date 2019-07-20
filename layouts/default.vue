@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="layout">
     <div class="content-header">
       <TopHeader />
       <MainHeader />
@@ -14,6 +14,7 @@
       <MainFooter />
       <BottomFooter />
     </div>
+    <DialogLogin />
   </div>
 </template>
 <script>
@@ -26,6 +27,8 @@ import TopFooter from '@/components/Footers/TopFooter';
 import MainFooter from '@/components/Footers/MainFooter';
 import BottomFooter from '@/components/Footers/BottomFooter';
 
+import DialogLogin from '@/components/Dialog/DialogLogin';
+
 export default {
   components: {
     TopHeader,
@@ -35,7 +38,8 @@ export default {
     MainFooter,
     BottomFooter,
     SocialFooter,
-  }
+    DialogLogin,
+  },
 }
 </script>
 <style lang="scss" scoped>
