@@ -52,6 +52,9 @@ export default {
         if (this.ruleForm.pass === "") {
           callback(new Error("Please enter your password"));
         }
+        if (this.ruleForm.pass.length < 8) {
+          callback(new Error("Password has length than 8 charecter"));
+        }
         callback();
       }, 500);
     };
