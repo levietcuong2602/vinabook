@@ -95,8 +95,6 @@ export default {
     showDialogLogin() {
       const isLogin = this.getDialogLoginVisible;
       this.$store.dispatch('changeDialogLoginVisible', !isLogin);
-
-      console.log('login: ', this.getDialogLoginVisible);
     }
   },
   mounted() {

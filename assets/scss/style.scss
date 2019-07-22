@@ -68,13 +68,28 @@ button.el-carousel__button {
   }
 }
 
-.layout {
-  .el-dialog__header {
-    background-color: #0a6f3c;
-    color: #fff;
-    font-weight: 500;
+.el-dialog__header {
+  background-color: #0a6f3c;
+  color: #fff;
+  font-weight: 500;
+}
+
+.register {
+  .el-form {
+    .el-input {
+      .el-input__suffix {
+        color: green;
+      }
+    }
   }
-  .el-button {
-    width: 20%;
+}
+
+.dialog-login {
+  .el-form {
+    .el-input {
+      .el-input__suffix {
+        color: green;
+      }
+    }
   }
 }

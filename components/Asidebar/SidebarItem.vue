@@ -13,12 +13,12 @@
         <div class="col-lg-8 col-md-8 col-sm-7 col-8">
           <p class="title">{{ product.title }}</p>
           <p class="author">{{ product.author }}</p>
-          <p class="rate">
+          <div class="rate">
             <el-rate
               v-model="product.rate"
               disabled
             ></el-rate>
-          </p>
+          </div>
           <div class="price">
             <span class="old-price">{{ product.oldPrice }} đ</span>
             <span class="final-price">{{ product.finalPrice }} đ</span>
