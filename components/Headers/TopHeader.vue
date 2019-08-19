@@ -34,46 +34,32 @@
           </span>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 col-12 text-left d-none d-md-block">
-          <span>
-            <!-- <div id="fb-root"></div> -->
-            <div id="fb-root"></div>
-            <script
-              async
-              defer
-              crossorigin="anonymous"
-              src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3"
-            ></script>
-
-            <!-- Your like button code -->
-            <div
-              class="fb-like"
-              data-href="https://www.facebook.com/vbee.texttospeech/"
-              data-width=""
-              data-layout="standard"
-              data-action="like"
-              data-size="small"
-              data-show-faces="false"
-              data-share="true"
-            ></div>
-          </span>
+          <FbLike />
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
+import FbLike from "./FbLike";
+
 export default {
-  name: 'TopHeader',
+  name: "TopHeader",
+  components: {
+    FbLike
+  },
   data() {
     return {
       popup: {
-        freeShip: 'Miễn phí giao hàng toàn quốc cho Đơn hàng từ 250.000đ.',
-        bookCate: 'Với hơn 80,000 đầu sách trong mọi lĩnh vực (và tiếp tục tăng mỗi ngày), Vinabook.com tự hào là nhà sách trên mạng có số lượng đầu sách lớn nhất Việt Nam, bạn có thể tìm được bất kỳ quyển sách nào cho mọi nhu cầu đọc sách của bạn.',
-        vinaReader: 'Hơn 10,000 tựa sách và tạp chí trong thư viện sách khổng lồ của Vinabook Reader mọi lúc mọi nơi chỉ từ 825đ/ngày',
+        freeShip: "Miễn phí giao hàng toàn quốc cho Đơn hàng từ 250.000đ.",
+        bookCate:
+          "Với hơn 80,000 đầu sách trong mọi lĩnh vực (và tiếp tục tăng mỗi ngày), Vinabook.com tự hào là nhà sách trên mạng có số lượng đầu sách lớn nhất Việt Nam, bạn có thể tìm được bất kỳ quyển sách nào cho mọi nhu cầu đọc sách của bạn.",
+        vinaReader:
+          "Hơn 10,000 tựa sách và tạp chí trong thư viện sách khổng lồ của Vinabook Reader mọi lúc mọi nơi chỉ từ 825đ/ngày"
       }
-    }
+    };
   }
-}
+};
 </script>
 <style scoped lang="scss">
 .top-header {

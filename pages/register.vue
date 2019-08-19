@@ -206,6 +206,14 @@ export default {
       this.$refs[formName].resetFields();
     },
   },
+  head () {
+    return {
+      title: 'Register',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Register page' }
+      ]
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
