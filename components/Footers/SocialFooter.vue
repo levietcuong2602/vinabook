@@ -15,10 +15,10 @@
               <el-input placeholder="Enter your email"></el-input>
             </el-form-item>
             <el-form-item class="col-lg-3 col-md-6 col-sm-12 col-12">
-              <el-select placeholder="Thể loại yêu thích">
+              <el-select placeholder="Thể loại yêu thích" :value="'all'">
                 <el-option
                   v-for="type in foveristTypes"
-                  :key="type.value"
+                  :key="type.title"
                   :label="type.title"
                   :value="type.value"
                 ></el-option>
@@ -35,26 +35,26 @@
 </template>
 <script>
 export default {
-  name: 'SocialFooter',
+  name: "SocialFooter",
   data() {
     return {
       foveristTypes: [
-        { title: 'Tất cả', value: 'all' },
-        { title: 'Sách Ngoại Văn', value: '739' },
-        { title: 'Sách Kinh Tế ', value: '348' },
-        { title: 'Sách Văn học Trong Nước', value: '353' },
-        { title: 'Sách Văn học Nước Ngoài', value: '354' },
-        { title: 'Sách Thường Thức – Đời Sống', value: '671' },
-        { title: 'Sách Thiếu Nhi', value: '525' },
-        { title: 'Sách Phát Triển Bản Thân', value: '668' },
-        { title: 'Sách Tin Học - Ngoại Ngữ', value: '669' },
-        { title: 'Sách Chuyên Ngành', value: '670' },
-        { title: 'Sách Giáo Khoa - Giáo Trình', value: '357' },
-        { title: 'Tạp chí - Văn phòng phẩm', value: '851' }
+        { title: "Tất cả", value: "all" },
+        { title: "Sách Ngoại Văn", value: "739" },
+        { title: "Sách Kinh Tế ", value: "348" },
+        { title: "Sách Văn học Trong Nước", value: "353" },
+        { title: "Sách Văn học Nước Ngoài", value: "354" },
+        { title: "Sách Thường Thức – Đời Sống", value: "671" },
+        { title: "Sách Thiếu Nhi", value: "525" },
+        { title: "Sách Phát Triển Bản Thân", value: "668" },
+        { title: "Sách Tin Học - Ngoại Ngữ", value: "669" },
+        { title: "Sách Chuyên Ngành", value: "670" },
+        { title: "Sách Giáo Khoa - Giáo Trình", value: "357" },
+        { title: "Tạp chí - Văn phòng phẩm", value: "851" }
       ]
-    }
+    };
   }
-}
+};
 </script>
 <style lang="scss" scoped>
 .social-footer {

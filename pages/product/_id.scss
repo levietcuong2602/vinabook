@@ -1,0 +1,167 @@
+.product-detail {
+  background-color: #fff;
+
+  .img-small-wrap  {
+    .item-gallery {
+      width: 60px;
+      height: 60px;
+      border: 1px solid #ddd;
+      margin: 7px 2px;
+      overflow: hidden;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      padding: 1px;
+    }
+    .img-small-wrap {
+      text-align: center;
+      margin: auto;
+      display: flex;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .book-detail {
+    .sub-title {
+      width: 100%;
+      border-top: 1px dashed #c7c7c7;
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      color: #000000;
+      line-height: 1.2;
+      text-align: left;
+      float: left;
+      margin-top: 15px;
+      padding-top: 15px;
+      margin-bottom: 10px;
+    }
+    .info-logistic {
+      margin: 0;
+      margin-top: 0;
+      float: left;
+      width: 100%;
+      padding: 0px;
+      li {
+        list-style: none;
+        margin-top: 5px;
+        padding-left: 25px;
+        color: #22242d;
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+        line-height: 1.667;
+        background: url(/img/dot_check.png) left 2px no-repeat;
+      }
+    }
+  }
+  .nav-product {
+    width: 100%;
+    padding: 0px;
+    .nav-link {
+      // color: #087b44;
+      color: #888888;
+      font-weight: 500;
+      &:hover {
+        border-bottom: 3px solid #087b44;
+      }
+    }
+    .el-divider {
+      top: 10px;
+    }
+  }
+  .box-author {
+    border: 1px solid #d1d3d4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: transparent;
+    box-shadow: 0 5px 0 0 #d9d9d9;
+    .title {
+      width: 100%;
+      color: #087b39;
+      line-height: 1.2;
+      text-align: left;
+      padding-bottom: 10px;
+      margin-bottom: 5px;
+      font-size: 1.4vw;
+      font-weight: 500;
+    }
+    .author-description {
+      border-top: 1px dashed #c7c7c7;
+      padding-top: 10px;
+      .author-name {
+        margin-bottom: 5px;
+        color: #087b39;
+        line-height: 1.2;
+        text-align: left;
+        font-size: 1.3vw;
+      }
+      .author-link {
+        padding: 10px 20px;
+        list-style-type: none;
+        margin: 0;
+        margin-left: -15px;
+        padding: 10px 20px;
+        .readmore {
+          padding-left: 17px;
+          color: #008340;
+          line-height: 1.5;
+          text-align: center;
+          background: url(/img/2_arow_2x.png) left 5px no-repeat;
+          background-size: 10px;
+          font-size: 90%;
+        }
+      }
+    }
+  }
+
+  #comment {
+    .box-total-rating {
+      .box-rating {
+        border-width: 1px;
+        border-color: #d2d2d2;
+        border-style: solid;
+        border-radius: 3px;
+        background-color: #ffffff;
+        box-shadow: inset 0 -3px 0 0 rgba(0,0,0,0.2);
+        padding: 20px 30px;
+        .title-rating {
+          text-align: center;
+          font-size: 1.5vw;
+          padding-bottom: 10px;
+        }
+        .main-rating {
+          .el-progress {
+            padding: 5px;
+          }
+          .star {
+            display: flex;
+            position: relative;
+            .title {
+              width: 40px;
+            }
+            .el-progress {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .box-register {
+        .login {
+          text-align: center;
+          .el-button {
+            width: 150px;
+          }
+        }
+        .register {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

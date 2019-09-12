@@ -53,6 +53,7 @@ export default {
     "~/plugins/element-ui.js",
     "~/plugins/bootstrap-vue.js",
     "~/plugins/vue-awesome-countdown.js",
+    "~/plugins/vue-scrollto.js",
     {
       src: "~plugins/fb-signin-button.js",
       ssr: false
@@ -63,6 +64,10 @@ export default {
     },
     {
       src: "~/plugins/vue-carousel-3d.js",
+      ssr: false
+    },
+    {
+      src: "~/plugins/vue-easy-lightbox.js",
       ssr: false
     }
   ],
