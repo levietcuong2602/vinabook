@@ -1,7 +1,7 @@
 <template>
   <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
     <a
-      href="#"
+      href="/product/1"
       class="product-item"
     >
       <div class="product-wrap">
