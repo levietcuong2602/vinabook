@@ -36,10 +36,10 @@ li {
   padding: 0;
   padding-bottom: 15px;
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
-  margin-top: 20px;
+  // margin-top: 20px;
   background-color: #fff;
   border-radius: 3px;
-  padding-top: 10px;
+  // padding-top: 10px;
   .title {
     border-bottom: 1px dashed #e6e6e6;
     padding: 10px 15px;

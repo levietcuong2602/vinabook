@@ -6,10 +6,7 @@
           <div class="col-xl-3 col-lg-3 col-md-12">
             <div class="top-logo">
               <a href="/">
-                <img
-                  src="/img/vnb_logo_2x.png"
-                  alt="logo"
-                >
+                <img src="/img/vnb_logo_2x.png" alt="logo" />
               </a>
             </div>
           </div>
@@ -21,11 +18,7 @@
                 :fetch-suggestions="querySearch"
                 placeholder="Enter book name, author's book"
               >
-                <i
-                  class="el-icon-search el-input__icon"
-                  slot="suffix"
-                >
-                </i>
+                <i class="el-icon-search el-input__icon" slot="suffix"></i>
                 <!-- <el-button slot="append">Tìm kiếm</el-button> -->
                 <template slot-scope="{ item }">
                   <div class="value">{{ item.value }}</div>
@@ -49,58 +42,62 @@
   </nav>
 </template>
 <script>
-import CartDropdown from './CartDropdown';
-import HeartDropdown from './HeartDropdown';
+import CartDropdown from "./CartDropdown";
+import HeartDropdown from "./HeartDropdown";
 
 import { mapGetters } from "vuex";
 
 export default {
-  name: 'MainHeader',
+  name: "MainHeader",
   components: {
     CartDropdown,
     HeartDropdown
   },
   computed: {
-    ...mapGetters(['getDialogLoginVisible']),
+    ...mapGetters(["getDialogLoginVisible"])
   },
   data() {
     return {
       links: [],
-      state: '',
+      state: ""
     };
   },
   methods: {
     querySearch(queryString, cb) {
       var links = this.links;
-      var results = queryString ? links.filter(this.createFilter(queryString)) : links;
+      var results = queryString
+        ? links.filter(this.createFilter(queryString))
+        : links;
       // call callback function to return suggestion objects
       cb(results);
     },
     createFilter(queryString) {
-      return (link) => {
-        return (link.value.toLowerCase().indexOf(queryString.toLowerCase()) === 0);
+      return link => {
+        return (
+          link.value.toLowerCase().indexOf(queryString.toLowerCase()) === 0
+        );
       };
     },
     loadAll() {
       return [
-        { "value": "vue", "link": "https://github.com/vuejs/vue" },
-        { "value": "element", "link": "https://github.com/ElemeFE/element" },
-        { "value": "cooking", "link": "https://github.com/ElemeFE/cooking" },
-        { "value": "mint-ui", "link": "https://github.com/ElemeFE/mint-ui" },
-        { "value": "vuex", "link": "https://github.com/vuejs/vuex" },
-        { "value": "vue-router", "link": "https://github.com/vuejs/vue-router" },
-        { "value": "babel", "link": "https://github.com/babel/babel" }
+        { value: "vue", link: "https://github.com/vuejs/vue" },
+        { value: "element", link: "https://github.com/ElemeFE/element" },
+        { value: "cooking", link: "https://github.com/ElemeFE/cooking" },
+        { value: "mint-ui", link: "https://github.com/ElemeFE/mint-ui" },
+        { value: "vuex", link: "https://github.com/vuejs/vuex" },
+        { value: "vue-router", link: "https://github.com/vuejs/vue-router" },
+        { value: "babel", link: "https://github.com/babel/babel" }
       ];
     },
     showDialogLogin() {
       const isLogin = this.getDialogLoginVisible;
-      this.$store.dispatch('changeDialogLoginVisible', !isLogin);
+      this.$store.dispatch("changeDialogLoginVisible", !isLogin);
     }
   },
   mounted() {
     this.links = this.loadAll();
   }
-}
+};
 </script>
 <style scoped lang="scss">
 .main-header {
@@ -110,7 +107,8 @@ export default {
     display: flex;
     align-items: center;
 
-    a, span {
+    a,
+    span {
       cursor: pointer;
       font-size: 85%;
       color: #0f0f0f;

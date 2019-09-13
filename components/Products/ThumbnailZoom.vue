@@ -1,15 +1,7 @@
 <template>
   <div class="item-gallery">
-    <img
-      class="pic"
-      :src="img"
-      alt="Adam"
-    >
-    <img
-      class="picbig"
-      :src="img"
-      alt="Adam"
-    >
+    <img class="pic" :src="img" alt="Adam" />
+    <img class="picbig" :src="img" alt="Adam" />
   </div>
 </template>
 <script>

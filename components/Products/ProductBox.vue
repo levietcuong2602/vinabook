@@ -2,10 +2,7 @@
   <div class="product-box mt-4">
     <div class="title-box">
       <span class="box-title">{{ title }}</span>
-      <a
-        href="#"
-        class="box-more"
-      >
+      <a href="#" class="box-more">
         <span>Xem thêm</span>
         <i class="fas fa-chevron-right"></i>
       </a>
@@ -17,18 +14,18 @@
 </template>
 <script>
 export default {
-  name: 'ProductBox',
+  name: "ProductBox",
   props: {
     title: {
       type: String,
-      default: 'Sách giáo khoa mua nhiều'
+      default: "Sách giáo khoa mua nhiều"
     },
     products: {
       type: Array,
-      default: () => ([])
+      default: () => []
     }
   }
-}
+};
 </script>
 <style lang="scss" scoped>
 @import "product_box.scss";
