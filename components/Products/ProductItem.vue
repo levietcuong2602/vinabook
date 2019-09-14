@@ -1,31 +1,29 @@
 <template>
-  <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
-    <a href="/product/1" class="product-item">
-      <div class="product-wrap">
-        <div class="book-info">
-          <div class="pict-book">
-            <img :src="bookInfo.img" alt="book image" class="img-product" />
-            <img src="img/icon-flash-sale.png" alt="icon flash sale" class="icon-sale" />
-          </div>
-          <div class="text-info">
-            <p class="product-title">{{ bookInfo.title }}</p>
-            <span class="product-author">{{ bookInfo.author }}</span>
-            <hr />
-            <p class="product-content">{{ bookInfo.content }}</p>
-          </div>
+  <a href="/product/1" class="product-item">
+    <div class="product-wrap">
+      <div class="book-info">
+        <div class="pict-book">
+          <img :src="bookInfo.img" alt="book image" class="img-product" />
+          <img src="img/icon-flash-sale.png" alt="icon flash sale" class="icon-sale" />
         </div>
-        <div class="price-book">
-          <div class="sale">
-            <span>{{ bookInfo.sales }}</span>
-          </div>
-          <div class="price">
-            <span class="old-price">{{ bookInfo.oldPrice }} đ</span>
-            <span class="final-price">{{ bookInfo.finalPrice }} đ</span>
-          </div>
+        <div class="text-info">
+          <p class="product-title">{{ bookInfo.title }}</p>
+          <span class="product-author">{{ bookInfo.author }}</span>
+          <hr />
+          <p class="product-content">{{ bookInfo.content }}</p>
         </div>
       </div>
-    </a>
-  </div>
+      <div class="price-book">
+        <div class="sale">
+          <span>{{ bookInfo.sales }}</span>
+        </div>
+        <div class="price">
+          <span class="old-price">{{ bookInfo.oldPrice }} đ</span>
+          <span class="final-price">{{ bookInfo.finalPrice }} đ</span>
+        </div>
+      </div>
+    </div>
+  </a>
 </template>
 <script>
 export default {

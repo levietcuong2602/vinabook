@@ -50,9 +50,20 @@
                 ></el-option>
               </el-select>
               <span class="pl-2">
-                <i class="range-item fas fa-list-ul"></i>
-                <i class="range-item el-icon-menu"></i>
+                <i
+                  :class="['range-item el-icon-menu', viewMode === 0 ? 'active': '']"
+                  @click="handleChangeView(0)"
+                ></i>
+                <i
+                  :class="['range-item fas fa-list-ul', viewMode === 1?'active': '']"
+                  @click="handleChangeView(1)"
+                ></i>
               </span>
+            </div>
+            <div class="list-book row">
+              <div :class="viewClass" v-for="i in 6" :key="i">
+                <ProductItem />
+              </div>
             </div>
           </div>
         </div>
@@ -61,12 +72,15 @@
   </div>
 </template>
 <script>
+import { VIEW_MODE } from "../../contants";
 import BoxCategory from "@/components/Asidebar/BoxCategory";
+import ProductItem from "@/components/Products/ProductItem";
 
 export default {
   name: "author-detail",
   components: {
-    BoxCategory
+    BoxCategory,
+    ProductItem
   },
   data() {
     return {
@@ -109,8 +123,23 @@ export default {
           label: "Giảm giá thấp đến cao"
         }
       ],
-      value: ""
+      value: "",
+      viewClass: "col-lg-4 col-md-6 col-sm-6 col-12 mt-3",
+      viewMode: VIEW_MODE.MULTI_COLUMN
     };
+  },
+  watch: {
+    viewMode(val) {
+      this.viewClass =
+        val === VIEW_MODE.MULTI_COLUMN
+          ? "col-lg-4 col-md-6 col-sm-6 col-12 mt-3"
+          : "col-12";
+    }
+  },
+  methods: {
+    handleChangeView(viewOption) {
+      this.viewMode = viewOption;
+    }
   }
 };
 </script>

@@ -19,44 +19,64 @@
         <div class="col-lg-9 col-md-8 col-sm-12 col-12">
           <FlashSale />
           <div class="row mt-3">
-            <ProductItem v-for="i in 6" :key="i" />
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3" v-for="i in 6" :key="i">
+              <ProductItem />
+            </div>
           </div>
           <!-- SGK mua nhiều -->
           <ProductBox title="Sách Giáo Khoa Mua Nhiều">
-            <ProductItem v-for="i in 6" :key="i" />
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3" v-for="i in 6" :key="i">
+              <ProductItem />
+            </div>
           </ProductBox>
           <!-- Sách Bán Chạy 06/2019 -->
           <ProductBox title="Sách Bán Chạy 06/2019">
-            <ProductItem v-for="i in 6" :key="i" />
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3" v-for="i in 6" :key="i">
+              <ProductItem />
+            </div>
           </ProductBox>
 
           <!-- Sách Văn Học Mới -->
           <ProductBox title="Sách Bán Chạy 06/2019">
-            <ProductItem v-for="i in 6" :key="i" />
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3" v-for="i in 6" :key="i">
+              <ProductItem />
+            </div>
           </ProductBox>
           <!-- Tác Giả Nổi Bật -->
           <ProductBox title="Sách Bán Chạy 06/2019">
-            <ProductItem v-for="i in 6" :key="i" />
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3" v-for="i in 6" :key="i">
+              <ProductItem />
+            </div>
           </ProductBox>
           <!-- Sách Kinh Tế Mới -->
           <ProductBox title="Sách Bán Chạy 06/2019">
-            <ProductItem v-for="i in 6" :key="i" />
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3" v-for="i in 6" :key="i">
+              <ProductItem />
+            </div>
           </ProductBox>
           <!-- Sách Nuôi Dạy Trẻ -->
           <ProductBox title="Sách Bán Chạy 06/2019">
-            <ProductItem v-for="i in 6" :key="i" />
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3" v-for="i in 6" :key="i">
+              <ProductItem />
+            </div>
           </ProductBox>
           <!-- Sách Thiếu Nhi Mới -->
           <ProductBox title="Sách Bán Chạy 06/2019">
-            <ProductItem v-for="i in 6" :key="i" />
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3" v-for="i in 6" :key="i">
+              <ProductItem />
+            </div>
           </ProductBox>
           <!-- Sách Kỹ Năng -->
           <ProductBox title="Sách Bán Chạy 06/2019">
-            <ProductItem v-for="i in 6" :key="i" />
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3" v-for="i in 6" :key="i">
+              <ProductItem />
+            </div>
           </ProductBox>
           <!-- Sách Vừa Xem -->
           <ProductBox title="Sách Bán Chạy 06/2019">
-            <ProductItem v-for="i in 5" :key="i" />
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3" v-for="i in 6" :key="i">
+              <ProductItem />
+            </div>
           </ProductBox>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 col-12">
