@@ -1,7 +1,7 @@
 <template>
   <b-dropdown toggle-class="text-decoration-none" variant="none" right no-caret lg>
     <template slot="button-content">
-      <i class="fas fa-cart-plus"></i>
+      <i class="fas fa-cart-plus text-success"></i>
       <b-badge pill variant="info" style="position: absolute; top: 35%;">5</b-badge>
     </template>
     <div class="dropdown-menu-lg">
@@ -26,7 +26,12 @@
           </div>
         </div>
       </b-dropdown-item>
-      <b-dropdown-item href="/carts/1">Another item</b-dropdown-item>
+      <b-dropdown-footer>
+        <span aria-disabled>
+          <strong>Tổng: 112.000 đ</strong>
+        </span>
+        <a href="/carts/1" class="btn-view-cart">Xem giỏ hàng</a>
+      </b-dropdown-footer>
     </div>
   </b-dropdown>
 </template>
@@ -52,6 +57,24 @@ export default {
 .dropdown-menu {
   .dropdown-header {
     min-width: 300px;
+  }
+}
+b-dropdown-footer {
+  max-width: 100%;
+  text-align: center;
+  padding-left: 15px;
+}
+.btn-view-cart {
+  border: 1px solid #e1af04;
+  border-radius: 3px;
+  padding: 5px;
+  margin-right: auto;
+  margin-left: 10px;
+  background: #ffc705;
+  color: #000;
+  text-decoration: none;
+  &:hover {
+    color: #2ca60d;
   }
 }
 </style>
