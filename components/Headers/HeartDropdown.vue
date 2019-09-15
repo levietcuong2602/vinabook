@@ -1,5 +1,5 @@
 <template>
-  <b-dropdown toggle-class="text-decoration-none" variant="none" right no-caret lg>
+  <b-dropdown class="m-2" toggle-class="text-decoration-none" variant="none" right no-caret lg>
     <template slot="button-content">
       <i class="fas fa-heart"></i>
       <b-badge pill variant="danger" style="position: absolute; top: 35%;">5</b-badge>
@@ -8,7 +8,7 @@
       <b-dropdown-header tag="div" class="text-center">
         <strong>Bạn có 5 yêu thích</strong>
       </b-dropdown-header>
-      <b-dropdown-item href="#">
+      <b-dropdown-item href="/carts/1">
         <div class="row">
           <div class="col-sm-4 col-4">
             <img
@@ -26,7 +26,7 @@
           </div>
         </div>
       </b-dropdown-item>
-      <b-dropdown-item href="#">Another item</b-dropdown-item>
+      <b-dropdown-item href="/carts/1">Another item</b-dropdown-item>
     </div>
   </b-dropdown>
 </template>
@@ -47,6 +47,11 @@ export default {
   outline: none;
   i {
     font-size: 25px;
+  }
+}
+.dropdown-menu {
+  .dropdown-header {
+    min-width: 300px;
   }
 }
 </style>
