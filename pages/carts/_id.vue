@@ -2,16 +2,19 @@
   <div class="cart-info">
     <div class="container">
       <div class="row mt-4">
+        <h5 class="text-success">Giỏ hàng của bạn</h5>
+      </div>
+      <div class="row mt-4">
         <div class="col-lg-8 col-md-8 col-sm-12 col-12">
           <div class="box-list-cart">
             <div class="box-main">
               <ProductInCart v-for="item in 3" :key="item" />
             </div>
             <div class="box-footer text-center mt-3">
-              <el-button type="primary">
+              <el-button type="primary" @click="handleBackPage">
                 <i class="el-icon-back"></i> Quay lại
               </el-button>
-              <el-button type="success">
+              <el-button type="success" @click="handleBuyNow">
                 Thanh toán
                 <i class="el-icon-right"></i>
               </el-button>
@@ -56,6 +59,14 @@ export default {
   name: "CartListPage",
   components: {
     ProductInCart
+  },
+  methods: {
+    handleBuyNow() {
+      window.location.href = "/payments/1";
+    },
+    handleBackPage() {
+      this.$router.go(-1);
+    }
   }
 };
 </script>

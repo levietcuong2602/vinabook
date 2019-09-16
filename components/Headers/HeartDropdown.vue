@@ -8,7 +8,7 @@
       <b-dropdown-header tag="div" class="text-center">
         <strong>Bạn có 5 yêu thích</strong>
       </b-dropdown-header>
-      <b-dropdown-item href="/carts/1">
+      <b-dropdown-item href="/product/1">
         <div class="row">
           <div class="col-sm-4 col-4">
             <img
@@ -26,12 +26,12 @@
           </div>
         </div>
       </b-dropdown-item>
-      <b-dropdown-footer>
+      <div class="dropdown-footer">
         <span>
           <strong>Tổng: 112.000 đ</strong>
         </span>
-        <a href="/carts/1" class="btn-view-cart">Xem giỏ hàng</a>
-      </b-dropdown-footer>
+        <a href="/wish-heart/1" class="btn-view-cart">Xem giỏ hàng</a>
+      </div>
     </div>
   </b-dropdown>
 </template>
@@ -59,7 +59,7 @@ export default {
     min-width: 300px;
   }
 }
-b-dropdown-footer {
+.dropdown-footer {
   max-width: 100%;
   text-align: center;
   padding-left: 15px;
@@ -72,6 +72,7 @@ b-dropdown-footer {
   margin-left: 10px;
   background: #ffc705;
   color: #000;
+  text-decoration: none;
   &:hover {
     color: #2ca60d;
   }

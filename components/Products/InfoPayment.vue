@@ -36,7 +36,7 @@
         <span>chỉ còn 2 sản phẩm</span>
       </div>
       <div class="main-footer">
-        <button type="button" class="buy-now">
+        <button type="button" class="buy-now" @click="handleBuyNow">
           <i class="fas fa-cart-plus"></i>Mua ngay
         </button>
       </div>
@@ -53,7 +53,12 @@
 </template>
 <script>
 export default {
-  name: "InfoPayment"
+  name: "InfoPayment",
+  methods: {
+    handleBuyNow() {
+      window.location.href = "/payments/1";
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

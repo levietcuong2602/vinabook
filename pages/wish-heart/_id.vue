@@ -15,31 +15,8 @@
           <BoxCategory />
         </div>
         <div class="col-lg-9 col-md-9 col-sm-6">
-          <div class="row author-info">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-              <img class="author-img" src="/img/140946_4.jpg" alt="this is image author" />
-            </div>
-            <div class="col-lg-9 col-md-9 col-sm-6 col-12">
-              <div class="author-name">
-                <p>
-                  <strong>Nguyễn Hữu Nam</strong>
-                </p>
-              </div>
-              <div class="author-descript">
-                <span>Lê Hữu Nam sinh ngày 01/03/1986 tại Đà Lạt. Nam sinh ra trong một gia đình chỉ có hai anh em trai, nhưng với chứng bệnh tim bẩm sinh không có vách ngăn liên thất, một căn bệnh không thể phẫu thuật triệt để, vậy nên ngay từ nhỏ sức của Nam rất yếu. Qua nhiều năm tháng điều trị, bệnh tình có nhiều biến chuyển, lúc khá hơn, lúc xấu đi nhưng đến nay Nam vẫn sống như một người bình thường; lập gia đình, sinh con có công việc của một phóng viên. Dù bệnh tim vẫn là một trở ngại lớn và khó đoán trước những bất trắc, song Nam vẫn kiên trì làm việc để lo tương lai cho con hết mức có thể. Hiện Nam đang công tác tại Tạp chí Tiếp Thị & Gia Đình.</span>
-              </div>
-              <div class="author-products">
-                <h5>Sách đã xuất bản</h5>
-                <ul class="list-product">
-                  <li class="product" v-for="book in authorBooks" :key="book.id">
-                    <a href="/product/1">{{ book.name }}</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row author-books mt-5">
-            <h5 class="title">Sách của tác giả</h5>
+          <div class="row author-books">
+            <h5 class="title">Sản phẩm yêu thích của bạn</h5>
             <div class="range-option">
               <el-select v-model="value" placeholder="Sắp xếp trạng thái sách">
                 <el-option

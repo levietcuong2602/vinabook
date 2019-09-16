@@ -1,0 +1,50 @@
+.author-detail {
+  background-color: #fff;
+  .author-info {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    padding: 38px 0 10px;
+    width: 100%;
+    .author-img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 0 15px #dddcdc;
+    }
+    .author-products {
+      .list-product {
+        padding-left: 20px;
+        .product {
+          list-style-type: inherit;
+          a {
+            color: #66645c;
+          }
+        }
+      }
+    }
+  }
+  .author-books {
+    .title {
+      padding: 0;
+      height: 30px;
+      margin-left: 0;
+      width: 100%;
+      line-height: 20px;
+      border-bottom: 1px dashed #c7c7c7;
+    }
+    .range-option {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      color: #c7c7c7;
+      .range-item {
+        &:hover {
+          color: #000;
+        }
+      }
+      .active {
+        color: #000;
+      }
+    }
+  }
+}

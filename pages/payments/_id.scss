@@ -1,0 +1,80 @@
+.payments {
+  background-color: #fff;
+  .step-checkout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: " ";
+      width: 45%;
+      height: 45px;
+      background-color: #ccc;
+      margin: auto;
+    }
+    .step {
+      font-size: 1.3vw;
+      padding: 10px;
+      font-weight: 500;
+      color: #66645c;
+      p {
+        margin: 0px;
+      }
+      .el-badge__content.is-fixed {
+        top: -15px;
+        right: 85px;
+        width: 35px;
+        height: 35px;
+        padding: 0px;
+        line-height: 30px;
+        border-radius: 16px;
+      }
+    }
+  }
+  .title {
+    width: 100%;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    color: #117c47;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Montserrat-Bold" !important;
+  }
+  .title-service, .title-edit {
+    text-transform: uppercase;
+    color: #117c47;
+    font-size: 16px;
+    padding: 15px 0 10px 0;
+  }
+  .content-service {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      margin: 0;
+      padding: 0 0 10px 0;
+      list-style-type: none;
+      font-size: 100%;
+      .control-group {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        label {
+          padding: 6px;
+          display: block;
+          font-weight: bold;
+          color: #4b4a44;
+          margin: 0px;
+        }
+      }
+    }
+  }
+  .action {
+    width: 100%;
+  }
+  .info-custom {
+    font-weight: 500;
+  }
+}

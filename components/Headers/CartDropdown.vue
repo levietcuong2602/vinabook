@@ -26,12 +26,12 @@
           </div>
         </div>
       </b-dropdown-item>
-      <b-dropdown-footer>
+      <div class="dropdown-footer">
         <span aria-disabled>
           <strong>Tổng: 112.000 đ</strong>
         </span>
         <a href="/carts/1" class="btn-view-cart">Xem giỏ hàng</a>
-      </b-dropdown-footer>
+      </div>
     </div>
   </b-dropdown>
 </template>
@@ -59,7 +59,7 @@ export default {
     min-width: 300px;
   }
 }
-b-dropdown-footer {
+.dropdown-footer {
   max-width: 100%;
   text-align: center;
   padding-left: 15px;
